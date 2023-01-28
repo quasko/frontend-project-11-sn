@@ -3,3 +3,6 @@
 .text-muted {
     color: #6c757d !important;
 }
+.text-sucess {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
