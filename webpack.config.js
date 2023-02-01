@@ -1,16 +1,16 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-    watch: true,
-    watchOptions: {
-        poll: 1000
-        },
+  watch: true,
+  watchOptions: {
+    poll: 1000,
+  },
   mode: process.env.NODE_ENV || 'development',
   module: {
     rules: [
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        type: 'asset',
       },
       { test: /\.css$/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       {
@@ -26,7 +26,7 @@ export default {
   ],
   devServer: {
     open: true,
-    host: "localhost",
+    host: 'localhost',
   },
   output: {
     clean: true,
