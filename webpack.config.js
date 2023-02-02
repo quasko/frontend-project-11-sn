@@ -1,10 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-  watch: true,
-  watchOptions: {
-    poll: 1000,
-  },
   mode: process.env.NODE_ENV || 'development',
   module: {
     rules: [
